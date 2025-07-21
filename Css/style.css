@@ -227,6 +227,128 @@ body {
     transform: translateY(-5px);
 }
 
+/* Research Section */
+.research-item {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    margin: 1rem 0;
+}
+
+.research-header {
+    margin-bottom: 1.5rem;
+}
+
+.research-header h3 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.research-info {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.research-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.research-info i {
+    color: var(--accent-color);
+}
+
+.key-achievements h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.key-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-achievements li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.key-achievements li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.research-body {
+    display: grid;
+    gap: 2rem;
+}
+
+.research-papers {
+    margin-bottom: 1.5rem;
+}
+
+.research-papers h4, .key-achievements h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.research-papers ul, .key-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.research-papers li {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.paper-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.research-papers li::before, .key-achievements li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.research-papers p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .research-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .research-papers, .key-achievements {
+        padding: 0 0.5rem;
+    }
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
